@@ -24,21 +24,21 @@ var _TextField = require('material-ui/TextField');
 
 var _TextField2 = _interopRequireDefault(_TextField);
 
-var _expandMore = require('material-ui/svg-icons/navigation/expand-more');
+var _ExpandMore = require('material-ui-icons/ExpandMore');
 
-var _expandMore2 = _interopRequireDefault(_expandMore);
+var _ExpandMore2 = _interopRequireDefault(_ExpandMore);
 
-var _expandLess = require('material-ui/svg-icons/navigation/expand-less');
+var _ExpandLess = require('material-ui-icons/ExpandLess');
 
-var _expandLess2 = _interopRequireDefault(_expandLess);
+var _ExpandLess2 = _interopRequireDefault(_ExpandLess);
 
-var _folder = require('material-ui/svg-icons/file/folder');
+var _Folder = require('material-ui-icons/Folder');
 
-var _folder2 = _interopRequireDefault(_folder);
+var _Folder2 = _interopRequireDefault(_Folder);
 
-var _insertDriveFile = require('material-ui/svg-icons/editor/insert-drive-file');
+var _InsertDriveFile = require('material-ui-icons/InsertDriveFile');
 
-var _insertDriveFile2 = _interopRequireDefault(_insertDriveFile);
+var _InsertDriveFile2 = _interopRequireDefault(_InsertDriveFile);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -177,7 +177,7 @@ var TreeList = function (_Component) {
                         primaryText: listItem._primaryText,
                         style: Object.assign({}, listItem._styles.root),
                         leftIcon: getLeftIcon(listItem, _this2.props.useFolderIcons),
-                        rightIcon: !listItem.children ? null : expandedListItems.indexOf(i) === -1 ? _react2.default.createElement(_expandMore2.default, null) : _react2.default.createElement(_expandLess2.default, null),
+                        rightIcon: !listItem.children ? null : expandedListItems.indexOf(i) === -1 ? _react2.default.createElement(_ExpandMore2.default, null) : _react2.default.createElement(_ExpandLess2.default, null),
                         onTouchTap: function onTouchTap() {
                             if (listItem.disabled) return;
                             _this2.handleTouchTap(listItem, i);
@@ -227,9 +227,9 @@ var TreeList = function (_Component) {
             function getLeftIcon(listItem, useFolderIcons) {
                 if (useFolderIcons) {
                     if (listItem.children) {
-                        return _react2.default.createElement(_folder2.default, null);
+                        return _react2.default.createElement(_Folder2.default, null);
                     } else {
-                        return _react2.default.createElement(_insertDriveFile2.default, null);
+                        return _react2.default.createElement(_InsertDriveFile2.default, null);
                     }
                 } else {
                     return listItem.icon;
