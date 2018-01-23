@@ -3,10 +3,10 @@ import PropTypes from 'prop-types'
 import { CSSTransitionGroup } from 'react-transition-group'
 import ListItem from 'material-ui/List/ListItem'
 import TextField from 'material-ui/TextField'
-import OpenIcon from 'material-ui/svg-icons/navigation/expand-more'
-import CloseIcon from 'material-ui/svg-icons/navigation/expand-less'
-import FolderIcon from 'material-ui/svg-icons/file/folder'
-import FileIcon from 'material-ui/svg-icons/editor/insert-drive-file'
+import OpenIcon from 'material-ui-icons/ExpandMore';
+import CloseIcon from 'material-ui-icons/ExpandLess';
+import FolderIcon from 'material-ui-icons/Folder';
+import FileIcon from 'material-ui-icons/InsertDriveFile';
 
 class TreeList extends Component {
     constructor(props) {
